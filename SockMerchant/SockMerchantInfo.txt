@@ -1,4 +1,6 @@
 Score: 100%
 
+Runtime: O(n)
+
 Info: Created a dictionary to store each sock color as a key and add a value of 1 each time it appeared on the list. 
 Afterwards, iterated through the dictionary and added a value of 1 to a counter for every pair of socks.

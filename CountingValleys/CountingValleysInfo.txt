@@ -1,0 +1,7 @@
+Score: 100%
+
+Runtime: O(n)
+
+Info: Iterate through given string while keeping track of the current
+depth level. Every time the current depth level reaches 0 after a 'U',
+add a value of one to the total amount of valleys being counted.
