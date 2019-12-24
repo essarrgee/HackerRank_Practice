@@ -1,0 +1,6 @@
+Score: 100%
+
+Runtime: O(n)
+
+Info: Initially tried using Recursion with a Tree, but figured a for-loop iterating
+through the input array was simpler to implement.
