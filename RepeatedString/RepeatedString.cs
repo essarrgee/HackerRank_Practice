@@ -17,21 +17,28 @@ class Solution {
     // Complete the repeatedString function below.
     static long repeatedString(string s, long n) {
 		
-		int occurrences = 0;
-		List<int> occurencePositions = new List<int>();
+		long occurrences = 0;
+		long remainder = 0;
+		long remainderDifference = 0;
+		List<int> occurrencePositions = new List<int>();
 		
 		for (int i=0; i<s.Length; i++) {
 			if (s[i] == 'a') {
-				occurencePositions.Add(i);
+				occurrencePositions.Add(i);
 			}
 		}
-		occurences += occurencePositions.Count;
 		
-		if (n%s.Length == 0) {
-			occurences *= (n/s.Length);
-		}
-		else {
-			
+		remainder = n%s.Length;
+		remainderDifference = n-(remainder);
+		
+		occurrences = occurrencePositions.Count * (remainderDifference/s.Length);
+		
+		if (remainder != 0) {
+			for (int i=0; i<occurrencePositions.Count; i++) {
+				if (occurrencePositions[i] < remainder) {
+					occurrences++;
+				}
+			}
 		}
 		
 		return occurrences;

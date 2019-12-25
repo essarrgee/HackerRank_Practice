@@ -1,0 +1,9 @@
+Score: 100%
+
+Runtime: O(n)
+
+Info: Used for-loop to get positions of all 'a' in base input string and stored in list.
+Used modulus to get remainder of input n when divided by length of base input string.
+Took the quotient of input n by input string length and multiplied it by the
+number of 'a' in input string, then iterated through list of all 'a' positions to get the
+remaining 'a' counts.
