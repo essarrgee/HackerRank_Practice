@@ -1,0 +1,9 @@
+Score: 100%
+
+Runtime: O(n)
+
+Info: Created a dictionary/hashmap to store each value in the array as keys and
+the amount of times they appear in the array as their respective values.
+Stored the key with highest amount of values for later reference.
+Iterated through the dictionary/hashmap and added up every value that did not belong
+to the key with the highest amount of values.
