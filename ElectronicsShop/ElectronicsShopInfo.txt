@@ -1,0 +1,6 @@
+Score: 100%
+
+Runtime: O(n^2)
+
+Info: Iterated through both given arrays and stored their sum if it was greater than
+previous obtained sums and at most equal to the given budget. Not fastest solution.
