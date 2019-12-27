@@ -1,0 +1,6 @@
+Score: 100%
+
+Runtime: O(n)
+
+Info: Created a hashmap to store each candle and their total amount. Store and later
+return the highest total in an integer variable.
