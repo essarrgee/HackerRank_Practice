@@ -1,0 +1,9 @@
+Score: 100%
+
+Runtime: O(n)
+
+Info: Created a hashmap to store each word in the 'dictionary' vector as a key and
+the number of times they appear in the vector as the value. Iterating through the
+'note' vector, checked if the hashmap contained a key with the matching name
+as each string while also making sure the number of times the 'note' vector does
+not contain more of one word than the value stored in the hashmap.
