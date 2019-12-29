@@ -1,0 +1,10 @@
+Score: 100%
+
+Runtime: O(n)
+
+Info: Nested for-loop would be too slow. Sort the given array with built-in sort function.
+Iterate through the sorted array and check differences between each consecutive 
+pair of numbers, storing the smallest obtained difference larger of equal to 0.
+No need to check differences of numbers beyond an index difference of 2 since the 
+array is sorted, meaning their value differences will always be larger 
+than those of index difference 1.
