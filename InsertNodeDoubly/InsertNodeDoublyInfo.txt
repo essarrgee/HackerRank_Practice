@@ -1,0 +1,9 @@
+Score: 100%
+
+Runtime: O(n)
+
+Info: Used while loop to iterate through doubly linked-list. When the given data is
+greater than the current node's and less than 'next''s data, insert a new node
+with the given data. Also checked if the data is less than the head's data beforehand
+and if the data is greater than that of every node in the linked-list after. If either
+is true, set the new node as the head of the tail respectively.
