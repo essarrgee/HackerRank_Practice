@@ -1,0 +1,7 @@
+Score: 100%
+
+Runtime: O(n)
+
+Info: Used for-loop by iterating through all 'next' nodes starting from the given
+head node, then set the current node's 'next' to a new node to be inserted, which has its
+'next' set to the current node's prior 'next'.
