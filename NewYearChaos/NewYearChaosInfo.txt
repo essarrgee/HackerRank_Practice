@@ -1,0 +1,11 @@
+Score: 100%
+
+Runtime: O(n^2) (Worst Case), O(1) (Best Case)
+
+Info: There is no need to swap the values in the array, since the prompt just asks
+for the number of swaps.
+Iterate through the given array and iterate from the current value - 2 to the
+current value to find values larger than the current value. For every larger value found
+within the range of 2, add one to a counter that keeps track of the number of swaps.
+In the initial loop, if a value is found that exceeds 2 swapped indeces, a 'break' is
+called and prints out 'Too chaotic' instead.
