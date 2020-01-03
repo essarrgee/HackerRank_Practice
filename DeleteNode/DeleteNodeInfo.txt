@@ -1,0 +1,8 @@
+Score: 100%
+
+Runtime: O(n) (Worst Case), O(1) (Best Case)
+
+Info: Check if the position to delete is at 0 and if true, set head to the next node.
+Otherwise, iterate through the given linked-list starting from head and keep track of the
+current position. Once the current position reaches the node before the given position, 
+set that node's 'next' as the node's 'next''s 'next'.
