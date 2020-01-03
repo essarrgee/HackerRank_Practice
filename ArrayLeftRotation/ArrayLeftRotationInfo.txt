@@ -1,0 +1,8 @@
+Score: 100%
+
+Runtime: O(n)
+
+Info: Iterate through the given array and shift each value by 'd' indeces. To get the new
+position, add the given 'd' to the value's current index and set that value to
+that sum index in a new array. If the new index was under 0 (out of bounds), take that
+index and add it to the array's length to get the wrap-around index.
