@@ -1,0 +1,9 @@
+Score: 100%
+
+Runtime: O(n)
+
+Info: Create a hashmap to store each number in the given array as a key and their
+respective positions as their key. Iterate through the given array and compare the
+current value and its index. Since the resulting array is sorted from 1 to n, the current
+value and the index + 1 must match. Using the hashmap as reference, swap the current value
+with the index's matching value to their matching indices and add 1 to the swap counter.
