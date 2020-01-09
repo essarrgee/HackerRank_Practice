@@ -1,0 +1,6 @@
+Score: 100%
+
+Runtime: O(n)
+
+Info: Iterate through the string and compare each subsequent character.
+If the characters match, add one to the deletion counter.
