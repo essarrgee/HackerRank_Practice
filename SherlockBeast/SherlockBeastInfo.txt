@@ -1,0 +1,8 @@
+Score: 100%
+
+Runtime: O(n)
+
+Info: Problem is asking for largest x and y in 5x + 3y = n, where n is given.
+Use a while loop, decrementing n down by 5 until the result of n%3 is 0.
+If no result is found, return -1, otherwise, return(print out) the string of 
+'5' by result times and '3' by (original n - result) times.
