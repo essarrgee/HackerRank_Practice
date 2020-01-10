@@ -1,0 +1,18 @@
+Score: 100%
+
+Runtime: O(n)
+
+Info: Create two hashmaps, one to store each character in the given string as a key and
+the number of times they appear as the value, and the other to store each of those
+values as keys and the number of times those values occur as values. After obtaining the
+second aforementioned hashmap, check the amount of keys in it. 
+
+If the amount exceeds 2, return "NO". If the amount is equal to 1, return "YES", 
+since this denotes that every character in the string already occurs the same amount. 
+Otherwise, with the amount being 2, this shows that there are 
+only characters that all occur "x" amount of times and a character that...
+-occurs "x+1" amount of times = removing one instance of that character would mean every 
+	character will occur the same amount.
+-occurs "1" amount of times = every character already occurs the same amount except for
+	this one and removing it would satisfy the requirement.
+If either of these are true, return "YES".
