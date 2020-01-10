@@ -1,0 +1,11 @@
+Score: 100%
+
+Runtime: O(n)
+
+Info: Create a new array of size k to hold each customer's total cost amount. Sort
+the given price array and iterate through it backwards. For every iteration,
+add the cost of the item to the current customer and add one to the current index tracker 
+for the customer array. Wrap back around to zero if the tracker exceeds the size of the 
+customer array. For every wrap around, add one to the priceIncrease variable, which is used
+to calculate the cost for each customer in (currentCost * (1 + priceIncrease)).
+At the end, add up all the total costs for all customers and return the final total.
