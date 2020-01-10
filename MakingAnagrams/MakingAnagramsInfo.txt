@@ -1,0 +1,19 @@
+Score: 100%
+
+Runtime: O(n)
+
+Info: Create two hashmaps/dictionaries and store characters as keys and the number of
+times they appear in the string as values for both respective strings. Iterate through
+the strings again and determine whether each character key in their corresponding hashmap
+has a larger value than the character key of the other string's hashmap. If true,
+reduce the value of the character key by one and add one to the deletion counter.
+
+Other: 
+C++ & C#:
+-Instead of iterating through hashmap, iterate through the 
+strings instead.
+C++:
+-No need to check whether map contains key yet; value for key is already at 0.
+C#:
+-When comparing values between dictionaries, must check if other dictionary has key yet.
+If not and value is greater than 0, make a deletion.
