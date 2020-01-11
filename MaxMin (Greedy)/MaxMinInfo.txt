@@ -1,0 +1,15 @@
+Score: 100%
+
+Runtime: O(n)
+
+Info: Sort the array and iterate through it. For every iteration, check the difference
+between the value at (i+k-1) index and the current index (i). If that difference is
+less than the minDifference variable (initialized to infinity), set the variable
+to that difference. Return minDifference at the end.
+
+Other Notes:
+-Even after sorting, arr[k-1] - arr[0] does not immediately produce the minimum unfairness
+value, since, for example, in an array of {1, 19, 20} with k = 2, arr[k-1] - arr[0] = 18,
+when the answer should be arr[2] - arr[1] = 1.
+-There is no need to check beyond arr[k-1] - arr[0] when calculating the difference for 
+each iteration after having sorted arr.
