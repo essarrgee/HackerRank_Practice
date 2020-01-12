@@ -1,0 +1,15 @@
+Score: 100%
+
+Runtime: O(n)
+
+Info: Problem is a variation of the Fibonacci problem, where DP is involved.
+Using the bottom-up approach, create an array of size n to store the total ways to climb up
+the stairs for each index, with each index corresponding to the current (step - 1).
+Initialize the array by setting the array's values at indices 0, 1, and 2 to
+1, 2, and 4 ways respectively.
+The Fibonacci problem requires the current step to look back 1 and 2 indices back for each
+iteration and add those results together, but since this problem deviates from this by 
+adding a third condition of skipping two steps, this solution should look back 
+1, 2, and 3 indices instead of just 1 and 2. Add the values contained in those indices
+and store them in the current step's index.
+The result will be the value contained at the final index of the array, or index (n-1).
