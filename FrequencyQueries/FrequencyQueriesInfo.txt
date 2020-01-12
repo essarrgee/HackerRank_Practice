@@ -1,0 +1,23 @@
+Score: 100%
+
+Runtime: O(n)?
+
+Info: 
+Create two dictionaries/hashmap: 
+1. Key: Each value inserted into the array.
+Value = Number of times it appears in the array. 
+2. Key: Number of times a value in the array shows up.
+Value: A list of values that show up that many times.
+Create a result list containing the results of every '3' query.
+Iterate through every query.
+For every '1' and '2' query, update both dictionaries respectively. 
+For every '3' query,add a '1' to the result list if the second dictionary contains a 
+key of the specified amount and the list contained in its value is not empty. 
+Otherwise, add a '0' to the result list instead.
+After iterating is done, return the result list.
+
+Other Notes:
+C#: 
+-When checking if a list is empty, do not check if its value at index [0] is empty. Use
+(List.Count <= 0) or (!List.Any()) instead.
+-Using List.Remove() may cost more to the complexity.
