@@ -7,5 +7,5 @@ for the number of swaps.
 Iterate through the given array and iterate from the current value - 2 to the
 current value to find values larger than the current value. For every larger value found
 within the range of 2, add one to a counter that keeps track of the number of swaps.
-In the initial loop, if a value is found that exceeds 2 swapped indeces, a 'break' is
+In the initial loop, if a value is found that exceeds 2 swapped indices, a 'break' is
 called and prints out 'Too chaotic' instead.

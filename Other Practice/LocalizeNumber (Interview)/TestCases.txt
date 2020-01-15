@@ -1,0 +1,19 @@
+Test Case 1:
+Input: 1 "de-de"
+Output: 1
+
+Test Case 2:
+Input: 20000.0001 "de-de"
+Output: 20 000.0001
+
+Test Case 3:
+Input: 20000000.0001 "es-es"
+Output: 20.000.000,0001
+
+Test Case 4:
+Input: 3497834293.032329 "en-en"
+Output: 3,497,834,293.03233
+
+Test Case 5:
+Input: 12904843000.0001 "en-en"
+Output: 12,904,843,000.0001

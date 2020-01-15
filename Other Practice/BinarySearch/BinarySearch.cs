@@ -1,12 +1,10 @@
 public static int binarySearch(int[] arr, int num) {
-	//array must be sorted
-	//get middle index of array
-	//compare num to value at middle index
-		//if greater, get middle index between current middle 
-			//index and last index
-		//if less, get middle index between first index and
-			//current middle index
-		//repeat process recursively
+	//set initial left index to 0 and right index to arr.Length (NOT length-1)
+	//iterative, for loop
+		//take pivot between left and right index
+		//compare arr[pivot] with numFind
+			//if >, shift leftIndex to pivot
+			//if <, shift rightIndex to pivot
 	int pivot = (int)((arr.Length-1)/2);
 	int leftIndex = 0, rightIndex = arr.Length; 
 		//not arr.Length-1 because Math.Round rounds DOWN
